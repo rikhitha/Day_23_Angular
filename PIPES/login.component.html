@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>The Login Form</title>
+</head>
+<body>
+    <div class="wrap">
+        <form class="login-form" action="">
+            <div class="form-header">
+                <h3>Login</h3>
+                <p>Login to access dashboard</p>
+            </div>
+            <!--Email Input-->
+            <div class="form-group">
+                <input type="text" class="form-input" [(ngModel)]="userid" placeholder="Enter username">
+            </div>
+            <!--Password Input-->
+            <div class="form-group">
+                <input type="password" class="form-input" [(ngModel)]="password" placeholder="Enter password">
+            </div>
+            <!--Login Button-->
+            <div class="form-group">
+                <button class="form-button" type="submit" (click)="handlelogin()">Login</button>
+            </div>
+            
+        </form>
+    </div><!--/.wrap-->
+</body>
+</html>
