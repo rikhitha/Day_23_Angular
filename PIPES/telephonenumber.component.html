@@ -1,0 +1,19 @@
+<p>telephonenumber works!</p>
+<br>
+<br>
+<h4>SELECT COUNTRY</h4>
+<select name="n" (change)="select($event)">
+    <option value="INDIA">INDIA</option>
+    <option value="US">UNITED STATES</option>
+    <option value="GERMANY">GERMANY</option>
+    <option value="JAPAN">JAPAN</option>
+
+</select>
+<br>
+<br>
+<input type="text" placeholder="enter phone number" [(ngModel)]="num" />
+    <h4>countryselected : {{countryselect}}</h4>
+    <br>
+    <br>
+<h5>{{num}}</h5>
+<h3>{{num|telephonepipe:countryselect}}</h3>
